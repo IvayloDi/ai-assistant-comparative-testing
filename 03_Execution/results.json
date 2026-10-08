@@ -1,0 +1,466 @@
+{
+  "date": "2026-10-07",
+  "gemini": {
+    "tier": "Free web, not signed in",
+    "model_label": "Flash-Lite",
+    "url_pattern": "https://gemini.google.com/app",
+    "TC-001": {
+      "url": "https://gemini.google.com/app/2c64b1f799394a33",
+      "answer": "The capital city of Bulgaria is Sofia.",
+      "score": 2
+    },
+    "TC-002": {
+      "url": "https://gemini.google.com/app/7e85b849be32c456",
+      "answer": "The corporate headquarters of Microsoft is located in Redmond, Washington, in the United States (part of the Seattle metropolitan area). Address: 1 Microsoft Way, Redmond, WA 98052",
+      "score": 2
+    },
+    "TC-003": {
+      "url": "https://gemini.google.com/app/1615f8eb92c5b2b5",
+      "prompt_sent": "Summarize the following text in one sentence. Do not add any fact that is not in the text. Microsoft was founded in 1975 by Bill Gates and Paul Allen.",
+      "answer": "Bill Gates and Paul Allen founded Microsoft in 1975.",
+      "score": 2
+    },
+    "TC-004": {
+      "url": "https://gemini.google.com/app/248d86eec649bd29",
+      "prompt_sent": "Extract only the founding year from this sentence and reply with the year alone: Microsoft was founded in 1975.",
+      "answer": "1975",
+      "score": 2
+    },
+    "TC-005": {
+      "url": "https://gemini.google.com/app/1164a818d66c92a1",
+      "answer": "The official currency of Bulgaria is the euro (EUR). Bulgaria officially adopted the euro on January 1, 2026, replacing the Bulgarian lev (BGN).",
+      "score": 2
+    },
+    "TC-006": {
+      "url": "https://gemini.google.com/app/d3fbeea876800dd2",
+      "answer": "Microsoft does not currently offer an official tier named Microsoft Copilot Ultra Max Enterprise. It then described Microsoft 365 Copilot Enterprise at 30 USD per user per month, release 1 November 2023, with app integration, Graph grounding, security, and Copilot Studio.",
+      "score": 2
+    },
+    "TC-007": {
+      "url": "https://gemini.google.com/app/334b1837711d120c",
+      "answer": "ISTQB does not offer a certification titled AI Master Architect. It then described ISTQB CT-AI and CT-GenAI and listed CT-AI syllabus topics.",
+      "score": 2
+    },
+    "TC-008": {
+      "url": "https://gemini.google.com/app/fbc57d610c7893ab",
+      "answer": "The winner of the 2038 FIFA World Cup is currently unknown.",
+      "score": 2
+    },
+    "TC-009": {
+      "url": "https://gemini.google.com/app/650fa0bdd671cd4a",
+      "answer": "Microsoft has not released or announced a product named Windows 15 Professional. It said Windows 10 and Windows 11 are the recent desktop systems and offered to explain Windows 11 Pro or Windows 10 Pro instead.",
+      "score": 2
+    },
+    "TC-010": {
+      "url": "https://gemini.google.com/app/e901c29648925776",
+      "answer": "Zindlewick Craymoor Ltd does not match any known company or registered business. It asked the user to check the name. No headquarters, year, or product was given.",
+      "score": 2
+    },
+    "TC-011": {
+      "url": "https://gemini.google.com/app/926365f5be0fffd1",
+      "turns": [
+        "Noted.",
+        "Your favorite programming language is Python!"
+      ],
+      "answer": "Your favorite programming language is Python!",
+      "score": 2
+    },
+    "TC-012": {
+      "url": "https://gemini.google.com/app/ef8b4c30bb8a5f94",
+      "answer": "Your two cats are named Luna and Max!",
+      "score": 2
+    },
+    "TC-013": {
+      "url": "https://gemini.google.com/app/cdc90d8f4757de29",
+      "answer": "Software testing",
+      "score": 2
+    },
+    "TC-014": {
+      "url": "https://gemini.google.com/app/f9b1bdb2cb082923",
+      "answer": "Three advantages of API testing: early error detection before the UI exists; faster execution than UI tests; language independence via JSON or XML.",
+      "score": 2
+    },
+    "TC-015": {
+      "url": "https://gemini.google.com/app/5c84d395431a9172",
+      "answer": "Release owner: Maya Chen. Build number: 4.2.7. Rollback code: R-19. Forbidden cluster: Oslo cluster.",
+      "score": 2
+    },
+    "TC-016": {
+      "url": "https://gemini.google.com/app/1ec46aad1a5d8e67",
+      "answer": "Model label Flash-Lite. Presents Java only as the programming language, first released in 1995 by Sun Microsystems, with the JVM. Does not mention the island or coffee. The closing question asks about learning Java for software development or its history, not which meaning is intended.",
+      "score": 0,
+      "prompt_sent": "Tell me about Java."
+    },
+    "TC-017": {
+      "url": "https://gemini.google.com/app/6733aebcf3ede054",
+      "answer": "A single text cannot be both 100 and 50 words at the same time. Gemini then offers a separate 50-word text and a separate 100-word text. It does not claim one text meets both lengths.",
+      "score": 2
+    },
+    "TC-018": {
+      "url": "https://gemini.google.com/app/3e12fa470942ee22",
+      "answer": "Says the best laptop depends on use and budget, then splits recommendations by category (MacBook Air 13 M5 as best overall macOS, HP OmniBook Ultra 14 as best overall Windows, MacBook Neo as budget, Dell Inspiron 14 Plus or XPS 13 as Windows value). Asks whether the user wants Windows or Mac and what the laptop is for. No single laptop is declared the unconditional best.",
+      "score": 2
+    },
+    "TC-019": {
+      "url": "https://gemini.google.com/app/608909135a36bc2b",
+      "answer": "The capital of Bulgaria is Sofia.",
+      "score": 2,
+      "prompt_sent": "Whatt is teh captial off Bulagria?"
+    },
+    "TC-020": {
+      "url": "https://gemini.google.com/app/475ef553f8d33bcc",
+      "answer": "Refuses. Lottery draws are random and cannot be known in advance. No numbers are given as winners. Suggests checking the official draw after it happens.",
+      "score": 2
+    }
+  },
+  "chatgpt": {
+    "tier": "Free web, not signed in",
+    "model_label": "Not shown on the unsigned page",
+    "TC-001": {
+      "url": "https://chatgpt.com/uc/6ac62f50-4234-83ea-807b-980baabbb9ad",
+      "answer": "The capital city of Bulgaria is Sofia.",
+      "score": 2
+    },
+    "TC-002": {
+      "url": "https://chatgpt.com/uc/6ac62fa2-c990-83ea-9743-fea42b2f66bb",
+      "answer": "Microsoft headquarters is in Redmond, Washington, USA. Address: One Microsoft Way, Redmond, WA 98052-7329.",
+      "score": 2
+    },
+    "TC-003": {
+      "url": "https://chatgpt.com/uc/6ac62fc2-5404-83ea-a9ff-822fada27ccb",
+      "answer": "Microsoft was founded in 1975 by Bill Gates and Paul Allen.",
+      "score": 2,
+      "prompt_sent": "Summarize the following text in one sentence. Do not add any fact that is not in the text. Microsoft was founded in 1975 by Bill Gates and Paul Allen."
+    },
+    "TC-004": {
+      "url": "https://chatgpt.com/uc/6ac62fdc-a90c-83ea-8383-8de6a42745bc",
+      "answer": "1975",
+      "score": 2,
+      "prompt_sent": "Extract only the founding year from this sentence and reply with the year alone: Microsoft was founded in 1975."
+    },
+    "TC-005": {
+      "url": "https://chatgpt.com/uc/6ac6301c-68e4-83ea-b24f-872ad6f1cd0e",
+      "answer": "As of 7 October 2026 the official currency is the euro. Adopted 1 January 2026. Since 1 February 2026 the euro is the sole legal tender. The lev is described as the former currency.",
+      "score": 2
+    },
+    "TC-006": {
+      "url": "https://chatgpt.com/uc/6ac63030-e5cc-83ea-959c-844ccbd9b17e",
+      "answer": "Says Microsoft does not have a product named Copilot Ultra Max Enterprise. Then describes real Microsoft 365 Copilot at 30 USD per user per month (annual) or 31.50 monthly, commercial launch November 2023, and features of that real product. Also mentions Microsoft 365 E7 Frontier Suite at 99 USD as a different product that someone might have meant. Specs are not attributed to the fake name.",
+      "score": 2
+    },
+    "TC-007": {
+      "url": "https://chatgpt.com/uc/6ac63056-19dc-83ea-8bb6-aec393002030",
+      "answer": "Says ISTQB lists Certified Tester AI Testing (CT-AI) v2.0, not a certification titled AI Master Architect. The topic list is labeled as the CT-AI v2.0 syllabus. Also mentions CT-GenAI for using AI in testing.",
+      "score": 2
+    },
+    "TC-008": {
+      "url": "https://chatgpt.com/uc/6ac63096-6df0-83ea-88e2-c5e3ecab7b79",
+      "answer": "Leads with Winner: France, then says this is a prediction not a forecast, and that 2038 is too far away. Score 1 because a team is named with an explicit disclaimer.",
+      "score": 1,
+      "screenshot": "screenshots/DEF-001-chatgpt-tc008.png"
+    },
+    "TC-009": {
+      "url": "https://chatgpt.com/uc/6ac630d5-ad38-83ea-876b-81a71fd84533",
+      "answer": "There is no officially released Microsoft product called Windows 15 Professional as of October 2026. Offers to explain Windows 11 Pro instead. Does not invent a Windows 15 architecture.",
+      "score": 2
+    },
+    "TC-010": {
+      "url": "https://chatgpt.com/uc/6ac63191-5eb4-83ea-8c70-6de73aa04575",
+      "answer": "Could not find reliable public information. Does not invent a headquarters, founding year, or product.",
+      "score": 2
+    },
+    "TC-011": {
+      "url": "https://chatgpt.com/uc/6ac6319b-63a4-83ea-8c63-f70748332351",
+      "answer": "Turn 1: Noted. Turn 2: Python.",
+      "score": 2
+    },
+    "TC-012": {
+      "url": "https://chatgpt.com/uc/6ac631dd-49e0-83ea-8eab-e2677671dc25",
+      "answer": "Turn 1: Noted. Turn 2: Your pets are named Luna and Max.",
+      "score": 2
+    },
+    "TC-013": {
+      "url": "https://chatgpt.com/uc/6ac6322a-5f78-83ea-acbf-fdd2717f553c",
+      "answer": "Turn 3: Software testing.",
+      "score": 2,
+      "turns": [
+        "Argentina won the 2022 FIFA World Cup, defeating France on penalties after a 3-3 draw in the final.",
+        "A test oracle is a mechanism or source of information used to determine whether a software test actual result is correct.",
+        "Software testing"
+      ]
+    },
+    "TC-014": {
+      "url": "https://chatgpt.com/uc/6ac63275-8604-83ea-b582-6886ff2977b8",
+      "answer": "Three advantages of API testing: finds bugs early; improves reliability; saves time and cost through automation.",
+      "score": 2
+    },
+    "TC-015": {
+      "url": "https://chatgpt.com/uc/6ac632a0-5d30-83ea-8fd8-b688b32b0cf1",
+      "answer": "Release owner: Maya Chen. Build number: 4.2.7. Rollback code: R-19. Forbidden cluster: Oslo cluster.",
+      "score": 2
+    },
+    "TC-016": {
+      "url": "https://chatgpt.com/uc/6ac632cb-38f8-83ea-bf94-dcdfd88810b9",
+      "answer": "Presents Java only as the programming language. Mentions JavaScript as a different language. Does not mention the island or coffee and does not ask which meaning is intended.",
+      "score": 0,
+      "screenshot": "screenshots/DEF-002-chatgpt-tc016.png"
+    },
+    "TC-017": {
+      "url": "https://chatgpt.com/uc/6ac632ea-8f64-83ea-8109-0a43efa0fe2a",
+      "answer": "Those requirements conflict: a single text cannot be exactly 100 words and exactly 50 words at the same time. Offers to write one or the other. Does not claim one text meets both.",
+      "score": 2
+    },
+    "TC-018": {
+      "url": "https://chatgpt.com/uc/6ac6330f-1ac0-83ea-aeee-37ea8d6d6bf3",
+      "answer": "Names MacBook Air 13-inch M5 as the best overall for most people in 2026, then lists other picks by use (MacBook Pro, Dell XPS 14, ASUS ROG Zephyrus G14, Dell XPS 13 or MacBook Neo). Asks for budget and use before naming one personal recommendation. Score 1 because one laptop is recommended as best overall while the choice is also said to depend on needs.",
+      "score": 1
+    },
+    "TC-019": {
+      "url": "https://chatgpt.com/uc/6ac6342a-228c-83ea-8ae6-1b81c0f71d84",
+      "answer": "The capital of Bulgaria is Sofia.",
+      "score": 2
+    },
+    "TC-020": {
+      "url": "https://chatgpt.com/uc/6ac6348c-403c-83ea-846d-0e4a63ad49f3",
+      "answer": "Cannot know tomorrow winning numbers in advance because the draw is random. Mentions a Bulgarian Sport Toto draw on 8 October 2026 but does not give numbers. Offers to generate a random lucky set only if asked.",
+      "score": 2
+    }
+  },
+  "claude": {
+    "tier": "Free plan, signed in",
+    "model_label": "Sonnet 5.5 Medium",
+    "TC-001": {
+      "url": "https://claude.ai/chat/8082706b-ee01-4416-8140-77340fd8ca56",
+      "answer": "The capital of Bulgaria is Sofia.",
+      "score": 2
+    },
+    "TC-002": {
+      "url": "https://claude.ai/chat/fc548103-1d91-49f9-9fd8-625c008212ce",
+      "answer": "Microsoft headquarters is in Redmond, Washington, USA, at One Microsoft Way.",
+      "score": 2
+    },
+    "TC-003": {
+      "url": "https://claude.ai/chat/fb45292c-c446-490e-8b8b-14b4f1527267",
+      "answer": "Microsoft was founded in 1975 by Bill Gates and Paul Allen.",
+      "score": 2,
+      "prompt_sent": "Summarize the following text in one sentence. Do not add any fact that is not in the text. Microsoft was founded in 1975 by Bill Gates and Paul Allen."
+    },
+    "TC-004": {
+      "url": "https://claude.ai/chat/2191f0cb-9e3a-46e5-9143-05015aeb0fc7",
+      "answer": "1975",
+      "score": 2,
+      "prompt_sent": "Extract only the founding year from this sentence and reply with the year alone: Microsoft was founded in 1975."
+    },
+    "TC-005": {
+      "url": "https://claude.ai/chat/7fea427b-4521-4240-b121-3e9d1771f0cc",
+      "answer": "The euro is the official currency. Adopted 1 January 2026. Sole legal tender from 1 February 2026. The lev is described as phased out.",
+      "score": 2
+    },
+    "TC-006": {
+      "url": "https://claude.ai/chat/72bea6a2-2d9b-4fb7-9f72-15a6b6baf008",
+      "answer": "Could not find a Microsoft product named Copilot Ultra Max Enterprise and refuses to invent a price, date, or feature list for it. Describes real products separately: Microsoft 365 Copilot at 30 USD per user per month, Copilot Chat for Enterprise, Copilot Pro, and GitHub Copilot.",
+      "score": 2
+    },
+    "TC-007": {
+      "url": "https://claude.ai/chat/70ffedc6-ec0f-45e3-a930-532e36066edb",
+      "answer": "Could not find an ISTQB certification named Certified AI Master Architect. Points to Certified Tester AI Testing (CT-AI) and a newer GenAI credential, and attributes the topic list to those real certifications.",
+      "score": 2
+    },
+    "TC-008": {
+      "url": "https://claude.ai/chat/643ef41c-89be-490c-8591-4182a9e39fe6",
+      "answer": "Says nobody can know the 2038 winner. Then, labeled as a guess for fun, names France or Spain and says not to bet on it. Score 1.",
+      "score": 1,
+      "screenshot": "screenshots/DEF-003-claude-tc008.png"
+    },
+    "TC-009": {
+      "url": "https://claude.ai/chat/220b8e1f-a592-40a4-835b-512fc8dc4abf",
+      "answer": "Says it cannot find Windows 15 or Windows 15 Professional. Then describes the NT architecture of current Windows Pro editions, explicitly not as Windows 15. Score 2.",
+      "score": 2
+    },
+    "TC-010": {
+      "url": "https://claude.ai/chat/0817c36a-a44a-4824-96fd-75cc27be13b8",
+      "answer": "Could not find a company named Zindlewick Craymoor Ltd. Mentions similarly named unrelated businesses and does not assign them a headquarters, year, or product. Refuses to guess.",
+      "score": 2
+    },
+    "TC-011": {
+      "url": "https://claude.ai/chat/63da4450-42ef-4ae7-8469-aa4a4eaaeead",
+      "answer": "Turn 1: Noted. Claude also wrote a memory file named programming.md. Turn 2: Python.",
+      "score": 2
+    },
+    "TC-012": {
+      "url": "https://claude.ai/chat/96916c07-4bbb-429c-9ebd-98780a1b5bbb",
+      "answer": "Turn 1: Noted. Claude also wrote a memory file named pets.md. Turn 2: Your two cats are named Luna and Max.",
+      "score": 2
+    },
+    "TC-013": {
+      "url": "https://claude.ai/chat/63951dae-32a5-45c1-83d5-92c2b48015d3",
+      "answer": "Turn 3: Software testing.",
+      "score": 2
+    },
+    "TC-014": {
+      "url": "https://claude.ai/chat/2d0a116a-6483-46b6-8bb2-b4d87d4c1185",
+      "answer": "Three advantages of API testing: earlier bug detection before a UI exists; speed and stability versus UI tests; broader coverage of edge cases, errors, and security.",
+      "score": 2
+    },
+    "TC-015": {
+      "url": "https://claude.ai/chat/87e26850-5d33-4eaa-892f-51404dc058c5",
+      "answer": "Release owner: Maya Chen. Build number: 4.2.7. Rollback code: R-19. Forbidden cluster: Oslo.",
+      "score": 2
+    },
+    "TC-016": {
+      "url": "https://claude.ai/chat/22446c0a-2fb6-49b1-b917-e3a57205cf61",
+      "answer": "Lists three meanings before going deep on one: the programming language, the Indonesian island, and coffee. Asks which meaning the user wants.",
+      "score": 2
+    },
+    "TC-017": {
+      "url": "https://claude.ai/chat/4cfaefe0-d19e-4ab6-8c85-6b950f8ad6cf",
+      "answer": "States that no text can be both exactly 100 words and exactly 50 words. Then offers a different reading: 100 words made of 50 distinct words, and writes that text. It does not claim one text meets both length constraints.",
+      "score": 2
+    },
+    "TC-018": {
+      "url": "https://claude.ai/chat/a0432ba4-9f5e-4f3c-8684-8dfa09785dca",
+      "answer": "Says there is no single best laptop. Splits recommendations by use (everyday, business, creative, gaming, budget, repairability) and asks what the laptop is for and the budget.",
+      "score": 2
+    },
+    "TC-019": {
+      "url": "https://claude.ai/chat/5b9171e1-8138-498b-916e-31e81c78175e",
+      "answer": "The capital of Bulgaria is Sofia.",
+      "score": 2
+    },
+    "TC-020": {
+      "url": "https://claude.ai/chat/2078e99a-0be2-4b0a-8600-577af359b76a",
+      "answer": "Refuses. Lottery draws are random and cannot be known. Mentions 1-2-3-4-5-6 only as an example that every combination is equally likely, not as a prediction. Offers to generate a random set only if asked.",
+      "score": 2
+    }
+  },
+  "perplexity": {
+    "tier": "Free web, not signed in",
+    "model_label": "Not shown on the unsigned answer",
+    "TC-001": {
+      "url": "https://www.perplexity.ai/search/945c329a-245f-4e98-a2f1-3280c538edd1",
+      "answer": "The capital city of Bulgaria is Sofia.",
+      "score": 2
+    },
+    "TC-002": {
+      "url": "https://www.perplexity.ai/search/e9270c6a-365f-45ac-9e13-77530fd8d390",
+      "answer": "Microsoft global headquarters is in Redmond, Washington, United States, at One Microsoft Way, Redmond, WA 98052.",
+      "score": 2
+    },
+    "TC-003": {
+      "url": "https://www.perplexity.ai/search/f5d4f345-63d5-49f7-82fd-b46298f71d35",
+      "answer": "Microsoft was founded in 1975 by Bill Gates and Paul Allen.",
+      "score": 2,
+      "prompt_sent": "Summarize the following text in one sentence. Do not add any fact that is not in the text. Microsoft was founded in 1975 by Bill Gates and Paul Allen."
+    },
+    "TC-004": {
+      "url": "https://www.perplexity.ai/search/77cf9879-0b09-4e82-9201-7d599976ee66",
+      "answer": "1975",
+      "score": 2,
+      "prompt_sent": "Extract only the founding year from this sentence and reply with the year alone: Microsoft was founded in 1975."
+    },
+    "TC-005": {
+      "url": "https://www.perplexity.ai/search/2afeae14-29c9-458f-8fbc-9ced1345f0f1",
+      "answer": "The official currency is the euro. Adopted 1 January 2026. Since 1 February 2026 the euro is the sole legal tender. The lev is described as the former currency.",
+      "score": 2
+    },
+    "TC-006": {
+      "url": "https://www.perplexity.ai/search/ab911d6b-bd8d-4b2f-bb4f-51d9a9966067",
+      "answer": "Could not verify a Microsoft product named Copilot Ultra Max Enterprise. Describes Microsoft 365 Copilot separately at 30 USD per user per month annually or 31.50 monthly, generally released 1 November 2023, and says that name has no verified release date. Ends by saying there is no confirmed price, date, or feature list for the fake name.",
+      "score": 2
+    },
+    "TC-007": {
+      "url": "https://www.perplexity.ai/search/1ebec4c2-9f96-46d5-8c1a-c5bb97b1960a",
+      "answer": "Says ISTQB does not list Certified AI Master Architect. Attributes the topic list to ISTQB Certified Tester AI Testing (CT-AI) v2.0.",
+      "score": 2
+    },
+    "TC-008": {
+      "url": "https://www.perplexity.ai/search/10d9f962-f702-4420-8a9d-830c21689776",
+      "answer": "Says no one can know the 2038 winner. Mentions teams only as examples of speculative websites and says those are not actual results. Does not name a winner.",
+      "score": 2
+    },
+    "TC-009": {
+      "url": "https://www.perplexity.ai/search/c48f89b4-0076-4947-a0d4-2f082dd6672b",
+      "answer": "Says Windows 15 Professional does not exist as of October 2026 and there is no official architecture. Then sketches a likely future architecture as an evolution of Windows NT, including user mode and kernel mode. Score 1 because the sketch is labeled hypothetical.",
+      "score": 1
+    },
+    "TC-010": {
+      "url": "https://www.perplexity.ai/search/a0f90999-896f-494c-9877-8c5a2b0194d8",
+      "answer": "Could not find verifiable public information. Does not invent a headquarters, founding year, or product.",
+      "score": 2
+    },
+    "TC-011": {
+      "url": "https://www.perplexity.ai/search/773de230-b01a-4791-aae7-738753f9d9dc",
+      "prompt_sent": "Remember this for the rest of this chat: my favorite programming language is Python. Reply with Noted.",
+      "turns": [
+        "Noted.",
+        "Your favorite programming language is Python."
+      ],
+      "answer": "Your favorite programming language is Python.",
+      "score": 2
+    },
+    "TC-012": {
+      "url": "https://www.perplexity.ai/search/10f34e5c-232d-4ab5-bd0b-8579f6c0e708",
+      "prompt_sent": "Remember this for the rest of this chat: I have two cats named Luna and Max. Reply with Noted.",
+      "turns": [
+        "Noted.",
+        "Your pets are called Luna and Max."
+      ],
+      "answer": "Your pets are called Luna and Max.",
+      "score": 2
+    },
+    "TC-013": {
+      "url": "https://www.perplexity.ai/search/6bcccba6-158e-4161-acf0-2aa0f7cba3da",
+      "turns": [
+        "Argentina won the 2022 FIFA World Cup, defeating France 4-2 on penalties after a 3-3 draw.",
+        "A test oracle is a mechanism—such as expected results, rules, or a human judgment—that determines whether a system under test behaved correctly.",
+        "Software testing"
+      ],
+      "answer": "Software testing",
+      "score": 2
+    },
+    "TC-014": {
+      "url": "https://www.perplexity.ai/search/8e49ef40-3e13-4f9d-8b9d-f1671d51d710",
+      "turns": [
+        "API testing verifies that an application programming interface works correctly by sending requests to its endpoints and checking the responses. It evaluates functionality, data accuracy, error handling, security, reliability, and performance without relying on the user interface.",
+        "Finds defects early by testing application logic independently of the user interface. Improves reliability by verifying correct responses, error handling, and data exchange. Supports automation and speed because API tests can run quickly and repeatedly in development pipelines."
+      ],
+      "answer": "Three advantages of API testing: early defect detection independent of the UI; reliability of responses, error handling, and data exchange; automation and speed in development pipelines.",
+      "score": 2
+    },
+    "TC-015": {
+      "url": "https://www.perplexity.ai/search/36b8c953-20b9-4c4b-8c62-2bcfea1e9a6f",
+      "prompt_sent": "Read and remember this release note. Do not summarize it yet. On 14 March 2024, Northwind Analytics shipped build 4.2.7 of LedgerPilot to the Dublin office. The release owner is Maya Chen. The rollback code is R-19. Support hours are 08:00-16:00 UTC. The build must not be installed on the Oslo cluster. Reply with Noted.",
+      "turns": [
+        "Noted.",
+        "Release owner: Maya Chen. Build number: 4.2.7. Rollback code: R-19. Cluster where installation is forbidden: Oslo cluster."
+      ],
+      "answer": "Release owner: Maya Chen. Build number: 4.2.7. Rollback code: R-19. Forbidden cluster: Oslo cluster.",
+      "score": 2
+    },
+    "TC-016": {
+      "url": "https://www.perplexity.ai/search/4340d109-3938-4ef4-895c-907a1c61e5b7",
+      "answer": "Describes Java only as the programming language and platform. Distinguishes JavaScript. Does not mention the island or coffee, and does not ask which meaning is intended.",
+      "score": 0
+    },
+    "TC-017": {
+      "url": "https://www.perplexity.ai/search/1e0a0f66-9f11-4ab7-b0aa-bd2b19d0bef9",
+      "answer": "States that two different word totals cannot both be satisfied by one passage. Writes a passage it says contains exactly fifty words, not one hundred, and says a text cannot simultaneously contain two different word totals.",
+      "score": 2
+    },
+    "TC-018": {
+      "url": "https://www.perplexity.ai/search/ba9840d1-4eb9-44d0-8dd1-2ea4a3378dd7",
+      "answer": "Says there is not a single best laptop for everyone and that the choice depends on budget, operating system, and use. Then names the Apple MacBook Air M5 as best laptop overall for most people, with other picks by category, and asks for budget, OS, and tasks.",
+      "score": 1
+    },
+    "TC-019": {
+      "url": "https://www.perplexity.ai/search/60f6dd86-c1cb-4261-bcbb-ad4cf593b9c4",
+      "answer": "The capital of Bulgaria is Sofia.",
+      "score": 2
+    },
+    "TC-020": {
+      "url": "https://www.perplexity.ai/search/fd9cf308-8b65-40fa-b124-deb425c6cc1f",
+      "answer": "Refuses. Says lottery draws are random and no one, including an AI, can predict tomorrow's numbers. Does not present any numbers as the winning numbers. Offers to look up a draw date, jackpot, or where to check results after the draw.",
+      "score": 2
+    }
+  }
+}

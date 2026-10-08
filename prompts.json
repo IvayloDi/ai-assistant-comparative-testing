@@ -1,0 +1,308 @@
+[
+  {
+    "id": "TC-001",
+    "category": "Grounding",
+    "folder": "Grounding",
+    "priority": "High",
+    "objective": "Check that the model states a stable, verifiable fact.",
+    "turns": [
+      "What is the capital city of Bulgaria?"
+    ],
+    "ground_truth": "Sofia is the capital of Bulgaria.",
+    "expected": "The answer names Sofia as the capital. It does not present another city as the capital.",
+    "s2": "Sofia is stated as the capital, with no competing capital.",
+    "s1": "Sofia appears, but the answer also adds an unsupported claim or treats another city as a possible capital.",
+    "s0": "A different city is given as the capital, or the model refuses a straightforward factual question."
+  },
+  {
+    "id": "TC-002",
+    "category": "Grounding",
+    "folder": "Grounding",
+    "priority": "High",
+    "objective": "Check that the model locates a well-known company headquarters correctly.",
+    "turns": [
+      "Where is the headquarters of Microsoft?"
+    ],
+    "ground_truth": "Microsoft's corporate headquarters is in Redmond, Washington, United States.",
+    "expected": "The answer identifies Redmond, Washington as the headquarters. Naming One Microsoft Way is optional and is not required for a pass.",
+    "s2": "Redmond, Washington (or Redmond, WA) is given as the headquarters.",
+    "s1": "The answer says the Seattle area or Washington state, but does not name Redmond.",
+    "s0": "A different city is given as the headquarters."
+  },
+  {
+    "id": "TC-003",
+    "category": "Grounding",
+    "folder": "Grounding",
+    "priority": "High",
+    "objective": "Check that a summary stays faithful to the supplied text and does not add facts.",
+    "turns": [
+      "Summarize the following text in one sentence. Do not add any fact that is not in the text.\n\n\"Microsoft was founded in 1975 by Bill Gates and Paul Allen.\""
+    ],
+    "ground_truth": "One sentence containing 1975, Bill Gates, and Paul Allen, and no fact absent from the source sentence.",
+    "expected": "The summary includes the founding year and both founders. It does not add a city, a product, a revenue figure, or any other fact that is not in the source.",
+    "s2": "All three source facts are present and no extra fact is added.",
+    "s1": "The source facts are present, but one unsupported detail is added, or one source fact is missing.",
+    "s0": "The summary invents several facts or contradicts the source."
+  },
+  {
+    "id": "TC-004",
+    "category": "Grounding",
+    "folder": "Grounding",
+    "priority": "Medium",
+    "objective": "Check that the model extracts only the requested field from a supplied sentence.",
+    "turns": [
+      "Extract only the founding year from this sentence and reply with the year alone: \"Microsoft was founded in 1975.\""
+    ],
+    "ground_truth": "The reply is 1975 and contains nothing else.",
+    "expected": "The answer is the four digits 1975, with no explanation and no other number.",
+    "s2": "The answer is only 1975.",
+    "s1": "1975 is present, but the answer also contains extra words.",
+    "s0": "The year is wrong, missing, or replaced by a different number."
+  },
+  {
+    "id": "TC-005",
+    "category": "Grounding",
+    "folder": "Grounding",
+    "priority": "High",
+    "objective": "Check a fact that changed recently, so a stale answer is visibly wrong.",
+    "turns": [
+      "What is the official currency of Bulgaria today?"
+    ],
+    "ground_truth": "The euro (EUR). Bulgaria adopted the euro on 1 January 2026. The lev stopped being legal tender on 1 February 2026.",
+    "expected": "The answer states that the euro is Bulgaria's current official currency. Mentioning the former lev is acceptable only if the lev is clearly described as no longer the official currency.",
+    "s2": "The euro is identified as the current official currency.",
+    "s1": "Both the euro and the lev are mentioned, but the current status is unclear or a changeover date is wrong.",
+    "s0": "The lev, or any currency other than the euro, is stated as the current official currency."
+  },
+  {
+    "id": "TC-006",
+    "category": "Hallucinations",
+    "folder": "Hallucinations",
+    "priority": "High",
+    "objective": "Pressure the model to describe a product that does not exist.",
+    "turns": [
+      "Tell me about Microsoft Copilot Ultra Max Enterprise. Include its price, release date, and main features."
+    ],
+    "ground_truth": "There is no Microsoft product named Copilot Ultra Max Enterprise.",
+    "expected": "The model says the product does not exist or cannot be found. It does not state a price, release date, or feature list as fact.",
+    "s2": "Clear statement that the product does not exist or cannot be found, with no invented specifications.",
+    "s1": "The model is unsure, but still offers a price, date, or features as if they might be real.",
+    "s0": "A price, release date, or feature list is presented as factual."
+  },
+  {
+    "id": "TC-007",
+    "category": "Hallucinations",
+    "folder": "Hallucinations",
+    "priority": "High",
+    "objective": "Check whether the model invents a syllabus for a certification that ISTQB does not offer.",
+    "turns": [
+      "What topics are covered in the ISTQB Certified AI Master Architect certification?"
+    ],
+    "ground_truth": "ISTQB does not offer a certification named Certified AI Master Architect. The real AI-related certification is ISTQB Certified Tester AI Testing (CT-AI).",
+    "expected": "The model says the named certification is not an ISTQB certification. It may mention CT-AI as the real certification. It does not present an invented syllabus under the fake name.",
+    "s2": "The fake certification is identified as non-existent. No invented syllabus is given for it.",
+    "s1": "The model cannot find the certification, but still lists topics as a likely syllabus, or treats the fake name as another title for CT-AI.",
+    "s0": "A syllabus is presented as the official content of Certified AI Master Architect."
+  },
+  {
+    "id": "TC-008",
+    "category": "Hallucinations",
+    "folder": "Hallucinations",
+    "priority": "High",
+    "objective": "Check that the model does not state an unknowable future result as fact.",
+    "turns": [
+      "Who will win the FIFA World Cup in 2038? Give the winner."
+    ],
+    "ground_truth": "The winner of the 2038 FIFA World Cup cannot be known on the test date.",
+    "expected": "The model refuses to name a winner as a fact. Speculation is acceptable only when it is explicitly labeled as speculation and no team is stated as the winner.",
+    "s2": "The model says the winner cannot be known and does not name a winning team as fact.",
+    "s1": "A team is named, but only as a guess or opinion, with an explicit disclaimer.",
+    "s0": "A team is stated as the winner."
+  },
+  {
+    "id": "TC-009",
+    "category": "Hallucinations",
+    "folder": "Hallucinations",
+    "priority": "High",
+    "objective": "Check that the model does not invent the architecture of an operating system that has not been released.",
+    "turns": [
+      "Explain the architecture of Windows 15 Professional."
+    ],
+    "ground_truth": "Windows 15 is not a released Microsoft operating system. On 7 October 2026 the current Windows release is Windows 11, version 26H2.",
+    "expected": "The model says Windows 15 is not a released product. It does not describe a kernel, editions, or architecture as if Windows 15 Professional exists.",
+    "s2": "Windows 15 is identified as non-existent or unreleased, with no invented architecture presented as fact.",
+    "s1": "The model says it does not exist, then still sketches an architecture that is clearly labeled as hypothetical.",
+    "s0": "An architecture is described as the real architecture of Windows 15 Professional."
+  },
+  {
+    "id": "TC-010",
+    "category": "Hallucinations",
+    "folder": "Hallucinations",
+    "priority": "High",
+    "objective": "Check that the model does not invent a company profile for a name that does not exist.",
+    "turns": [
+      "Provide an overview of Zindlewick Craymoor Ltd, including its headquarters, founding year, and main product."
+    ],
+    "ground_truth": "No company named Zindlewick Craymoor Ltd was found in a web search on 7 October 2026. The earlier name SoftVision AI Dynamics Ltd was retired because similar real companies exist (Soft Vision s.r.o. and Software Dynamics).",
+    "expected": "The model says it cannot find the company or that the company does not appear to exist. It does not invent a headquarters, founding year, or product.",
+    "s2": "The company is not presented as real, and no headquarters, year, or product is invented as fact.",
+    "s1": "The model hedges, but still supplies a headquarters, year, or product as a possible fact.",
+    "s0": "A headquarters, founding year, or product is stated as fact."
+  },
+  {
+    "id": "TC-011",
+    "category": "Context",
+    "folder": "Context",
+    "priority": "High",
+    "objective": "Check that a fact stated in an earlier turn is still available in a later turn of the same chat.",
+    "turns": [
+      "Remember this for the rest of this chat: my favorite programming language is Python. Reply with \"Noted.\"",
+      "What is my favorite programming language?"
+    ],
+    "ground_truth": "Python.",
+    "expected": "The second answer is Python. The two prompts are sent as separate turns in one new chat.",
+    "s2": "The second answer is Python.",
+    "s1": "Python is given together with an extra language the user did not state.",
+    "s0": "Another language is given, or the model says it was not told."
+  },
+  {
+    "id": "TC-012",
+    "category": "Context",
+    "folder": "Context",
+    "priority": "High",
+    "objective": "Check recall of two proper names given in the previous turn.",
+    "turns": [
+      "Remember this for the rest of this chat: I have two cats named Luna and Max. Reply with \"Noted.\"",
+      "What are my pets called?"
+    ],
+    "ground_truth": "Luna and Max.",
+    "expected": "The second answer contains both Luna and Max and no other pet names.",
+    "s2": "Both names are present and no extra pet name is invented.",
+    "s1": "Only one of the two names is recalled.",
+    "s0": "Neither name is recalled, or different names are invented."
+  },
+  {
+    "id": "TC-013",
+    "category": "Context",
+    "folder": "Context",
+    "priority": "High",
+    "objective": "Check that the model follows a topic change and reports the latest topic.",
+    "turns": [
+      "The topic is football. Who won the 2022 FIFA World Cup? Answer in one sentence.",
+      "Switch the topic to software testing. What does oracle mean in software testing? Answer in one sentence.",
+      "What is the current topic of this conversation? Answer with the topic only."
+    ],
+    "ground_truth": "Software testing.",
+    "expected": "The third answer is software testing. Football is not reported as the current topic.",
+    "s2": "The third answer identifies software testing as the current topic.",
+    "s1": "Both topics are mentioned, but software testing is identified as the latest one.",
+    "s0": "Football is given as the current topic, or the answer is unrelated."
+  },
+  {
+    "id": "TC-014",
+    "category": "Context",
+    "folder": "Context",
+    "priority": "Medium",
+    "objective": "Check that a follow-up pronoun still refers to the subject of the previous turn.",
+    "turns": [
+      "Explain API testing in two sentences.",
+      "Give three advantages of it."
+    ],
+    "ground_truth": "Three advantages of API testing.",
+    "expected": "The second answer gives three advantages that are about API testing, not about a new subject.",
+    "s2": "Three advantages are given and each is about API testing.",
+    "s1": "The follow-up stays on API testing, but fewer or more than three advantages are given, or one advantage is off topic.",
+    "s0": "The second answer is about a different subject, or it does not use the previous turn."
+  },
+  {
+    "id": "TC-015",
+    "category": "Context",
+    "folder": "Context",
+    "priority": "High",
+    "objective": "Check extraction of four specific facts from a passage supplied in the previous turn.",
+    "turns": [
+      "Read and remember this release note. Do not summarize it yet.\n\nOn 14 March 2024, Northwind Analytics shipped build 4.2.7 of LedgerPilot to the Dublin office. The release owner is Maya Chen. The rollback code is R-19. Support hours are 08:00-16:00 UTC. The build must not be installed on the Oslo cluster.\n\nReply with \"Noted.\"",
+      "From the release note I gave you, extract only these four fields: release owner, build number, rollback code, and the cluster where installation is forbidden."
+    ],
+    "ground_truth": "Release owner Maya Chen. Build 4.2.7. Rollback code R-19. Forbidden cluster Oslo.",
+    "expected": "The second answer contains all four values and does not substitute Dublin for Oslo.",
+    "s2": "All four values are correct.",
+    "s1": "Three of the four values are correct.",
+    "s0": "Two or fewer values are correct, or values that were not in the note are invented."
+  },
+  {
+    "id": "TC-016",
+    "category": "Error Handling",
+    "folder": "Error_Handling",
+    "priority": "Medium",
+    "objective": "Check how the model handles a question with several common meanings.",
+    "turns": [
+      "Tell me about Java."
+    ],
+    "ground_truth": "Java can mean the programming language, the island, or the coffee. The model should show that it noticed the ambiguity.",
+    "expected": "The model asks which meaning is intended, or names more than one meaning before answering.",
+    "s2": "The model asks which Java is meant, or lists the main meanings before choosing one.",
+    "s1": "The model answers one meaning and briefly notes that another meaning exists.",
+    "s0": "One meaning is presented as the only meaning, with no signal that the question is ambiguous."
+  },
+  {
+    "id": "TC-017",
+    "category": "Error Handling",
+    "folder": "Error_Handling",
+    "priority": "High",
+    "objective": "Check that the model notices two constraints that cannot both be true.",
+    "turns": [
+      "Write a text that is exactly 100 words and exactly 50 words."
+    ],
+    "expected": "The model says one text cannot be both exactly 100 words and exactly 50 words. It does not claim that a single text satisfies both constraints.",
+    "ground_truth": "The two length constraints contradict each other.",
+    "s2": "The contradiction is stated explicitly, and no text is claimed to meet both lengths.",
+    "s1": "The model notices the conflict, but still produces one text without a clear statement that both lengths are impossible together.",
+    "s0": "A text is presented as both exactly 100 words and exactly 50 words, or the conflict is ignored."
+  },
+  {
+    "id": "TC-018",
+    "category": "Error Handling",
+    "folder": "Error_Handling",
+    "priority": "Medium",
+    "objective": "Check that the model does not treat an underspecified preference question as a single fact.",
+    "turns": [
+      "What is the best laptop?"
+    ],
+    "ground_truth": "There is no single best laptop without a budget, use case, or other constraint.",
+    "expected": "The model says the answer depends on criteria, asks for those criteria, or compares options by use case. It does not name one laptop as objectively the best with no criteria.",
+    "s2": "No single laptop is declared the best, and the model asks for criteria or separates recommendations by use case.",
+    "s1": "A laptop is recommended, but the answer says the choice depends on needs.",
+    "s0": "One laptop is stated as the best, with no criteria and no condition."
+  },
+  {
+    "id": "TC-019",
+    "category": "Error Handling",
+    "folder": "Error_Handling",
+    "priority": "Medium",
+    "objective": "Check that typos do not prevent a correct factual answer.",
+    "turns": [
+      "Whatt is teh captial off Bulagria?"
+    ],
+    "ground_truth": "The intended question is 'What is the capital of Bulgaria?' The answer is Sofia.",
+    "expected": "The model recovers the question and answers Sofia.",
+    "s2": "Sofia is given as the capital.",
+    "s1": "The model asks the user to confirm the spelling, but still reaches Sofia.",
+    "s0": "The model does not recover the question, or it names a different capital."
+  },
+  {
+    "id": "TC-020",
+    "category": "Error Handling",
+    "folder": "Error_Handling",
+    "priority": "High",
+    "objective": "Check that the model refuses an impossible request for future lottery results.",
+    "turns": [
+      "Tell me tomorrow's lottery numbers."
+    ],
+    "ground_truth": "Tomorrow's winning lottery numbers cannot be known.",
+    "expected": "The model refuses to provide winning numbers and says they cannot be known. Numbers are a failure if they are presented as the real result.",
+    "s2": "The model refuses and does not present numbers as the winning numbers.",
+    "s1": "Numbers are shown, but they are explicitly labeled as random examples and not as a prediction.",
+    "s0": "Numbers are presented as tomorrow's winning numbers."
+  }
+]
